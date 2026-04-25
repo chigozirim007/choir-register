@@ -4,12 +4,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC29hXnWM6Gul1SuDSeYpTcu8L2ooifTrY",
-  authDomain: "choir-register.firebaseapp.com",
-  projectId: "choir-register",
-  storageBucket: "choir-register.firebasestorage.app",
-  messagingSenderId: "789835587100",
-  appId: "1:789835587100:web:1ad6e0853b36a6d8d249d9"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
